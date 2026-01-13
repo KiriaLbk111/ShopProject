@@ -1,0 +1,22 @@
+.full-width { 
+    width: 100%; 
+    font-family: cursive;
+    position: relative;
+    ::ng-deep label {
+        color: white;
+    } 
+    ::ng-deep mat-label {
+        color: white;
+    }
+    ::ng-deep .mat-select-value-text {
+        color: white;
+    }
+    ::ng-deep .mat-select-arrow-wrapper div {
+        color: white;
+    }
+    .invalid {
+       position: absolute;
+        bottom: -23px;
+        color: red;
+    }
+}

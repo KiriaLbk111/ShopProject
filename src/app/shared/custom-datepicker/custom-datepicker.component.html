@@ -1,0 +1,7 @@
+<mat-form-field appearance="outline" class="full-width">
+    <mat-label>{{ label }}</mat-label>
+    <input readonly matInput [matDatepicker]="picker" [value]="value" (dateChange)="selectionChange($event.value)" [placeholder]="placeholder" />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <div class="invalid" *ngIf="isInvalid()">Required field</div>
+</mat-form-field>

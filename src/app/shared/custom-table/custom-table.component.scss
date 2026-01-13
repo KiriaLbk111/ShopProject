@@ -1,0 +1,32 @@
+.custom-table__container {
+    table {
+        width: 100%;
+        font-family: cursive;
+        background: darkviolet;
+        .no-data {
+            text-align: center;
+        }
+        th, td {
+            color: white;
+        }
+        th {
+            
+        }
+    }
+    mat-paginator {
+        background: darkviolet;
+        color: white;
+        ::ng-deep .mat-select-value-text {
+            color: white;
+        }
+        ::ng-deep .mat-select-arrow {
+            color: white;
+        }
+        ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline  {
+            background-color: white;
+        }
+        ::ng-deep .mat-paginator-range-actions button {
+            color: white;
+        }
+    }
+}

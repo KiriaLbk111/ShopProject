@@ -1,0 +1,13 @@
+<div class="potions__container">
+    <div class="order-button">
+        <button mat-button color="primary" (click)="order()">Order</button>
+    </div>
+    <div class="available-potions">
+        <app-potions-list [data]="availablePotions"></app-potions-list>
+    </div>
+    <div class="ordered-potions">
+        <button mat-button color="primary" (click)="showOrNotShowOrders()">Show orders</button>
+        <app-potions-list *ngIf="isShowOrderedPotions" [data]="orders" [columns]="ordersColumn"></app-potions-list>
+    </div>
+</div>
+<ng-container #dynamicContainer></ng-container>

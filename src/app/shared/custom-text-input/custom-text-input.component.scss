@@ -1,0 +1,21 @@
+.full-width { 
+    width: 100%;
+    font-family: cursive;
+    mat-label {
+        color: white;
+    }
+    .invalid {
+       position: absolute;
+        bottom: -23px;
+        color: red;
+    } 
+    input {
+        color: white;
+    }
+    input::placeholder {
+        color: white;
+    }
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline  {
+    color: white !important;
+}

@@ -1,0 +1,6 @@
+<mat-form-field appearance="outline" class="full-width">
+  <mat-label>{{ label }}</mat-label>
+  <input matInput [placeholder]="placeholder" [ngModel]="value"
+  (ngModelChange)="selectionChange($event)"/>
+  <div class="invalid" *ngIf="isInvalid()">Required field</div>
+</mat-form-field>

@@ -1,0 +1,29 @@
+.store__container {
+    h1, h3 {
+        text-align: center;
+        font-family: cursive;
+    }
+    h1 {
+        margin-top: 150px;
+        font-size: 50px;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    h3 {
+        color: white;
+        font-size: 23px;
+    }
+    .store-content {
+        // адаптивность
+        @media (min-width: 1100px) {
+            width: 60%;
+        }
+        @media (max-width: 1099px) and (min-width: 700px) {
+            width: 80%;
+        }
+        @media (max-width: 699px) {
+            width: 98%;
+        }
+        margin: auto;
+    }
+}

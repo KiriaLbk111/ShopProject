@@ -1,0 +1,52 @@
+<div class="order__container">
+  <div class="order-content" (click)="$event.stopPropagation()">
+    <div class="order-body">
+      <form [formGroup]="orderForm">
+        <app-custom-select
+          formControlName="id"
+          label="Potion number"
+          [isTouched]="isTouched"
+          [options]="potionOptions">
+        </app-custom-select>
+        <app-custom-text-input
+          formControlName="name"
+          label="Who order"
+           [isTouched]="isTouched"
+          placeholder="Enter name">
+        </app-custom-text-input>
+        <app-custom-datepicker
+          formControlName="orderDate"
+          label="When order"
+           [isTouched]="isTouched">
+        </app-custom-datepicker>
+        <app-custom-datepicker
+          formControlName="readyDate"
+           [isTouched]="isTouched"
+          label="When should it be ready">
+        </app-custom-datepicker>
+        <app-custom-text-input
+          formControlName="deliveryAddress"
+          label="Address"
+           [isTouched]="isTouched"
+          placeholder="Enter address">
+        </app-custom-text-input>
+        <app-custom-text-input
+          formControlName="deliveryMethod"
+          label="Delivery method"
+           [isTouched]="isTouched"
+          placeholder="Enter method">
+        </app-custom-text-input>
+        <app-custom-select
+          formControlName="paymentMethod"
+          label="Payment method"
+          [isTouched]="isTouched"
+          [options]="paymentOptions">
+        </app-custom-select>
+      </form>
+      <button mat-button class="cancel" (click)="onClose()">Cancel</button>
+      <button mat-raised-button class="order" color="primary" (click)="submit()">
+        Order
+      </button>
+    </div>
+  </div>
+</div>

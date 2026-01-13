@@ -1,0 +1,22 @@
+.potions__container {
+    .order-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+        button {
+            font-size: 17px;
+            border: 1px solid yellow;
+            color: yellow;
+        }
+    }
+    .ordered-potions {
+        margin-top: 12px;
+        button {
+            font-size: 17px;
+            margin-bottom: 12px;
+            border: 1px solid yellow;
+            color: yellow;
+        }
+    }
+}
